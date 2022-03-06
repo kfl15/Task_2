@@ -1,0 +1,42 @@
+Tracking Exercise with Galaxy Watch
+
+Dear developers, it is an honor to present you the Samsung latest wearables GALAXY WATCH, and a platform where you can develop your application to serve the customer and build up your profile, making it more enriched. 
+The Galaxy Watch offers the user to measure the exercise more precisely and correctly. The most exact readings are provided by modern sensors designed exclusively for Health Services. You can assess and track the results of various exercises after connecting to Healthcare System provided by Samsung.
+
+This blog walks you through some of the key steps in creating an activity monitoring app with the Health Services API.
+A variety of workout types are defined by Health Services. There are many exercises and a list is also given in case you can understand the diversity Samsung provides for the developers along with its consumers. The list is given below:
+•	BACK_EXTENSION
+•	BARBELL_SHOULDER_PRESS
+•	BENCH_PRESS
+•	BENCH_SIT_UP
+•	BURPEE
+•	CRUNCH
+•	DEADLIFT
+•	FORWARD_TWIST
+•	DUMBBELL_CURL_RIGHT_ARM
+•	DUMBBELL_FRONT_RAISE, etc.
+Now to get the Samsung health service, you have to connect. And to do so, you just need to follow the below steps:
+•	Add the appropriate library dependency to your app’s build.gradle file.
+•	In your app’s android manifest, add the necessary configuration to allow your app to connect with the health service.
+•	Add the permissions required by your app.
+After following these steps, you can connect to the Health Service.
+
+
+Now, we are set up. We are linked up with the Health Service and we are showing the steps to follow:
+1.	First, we need to get a client of a specific exercise. (i.e. CRUNCH)
+2.	Then, in the configuration builder, we must select the exercise type:
+3.	We'll need to evaluate its capabilities to see what we can track for our experiment.
+4.	To do this, we will be using a ListenableFuture object and this object will give a callback where we will find a set of capabilities.
+5.	We can also remove the unnecessary things from the capability set. 
+6.	After that, we are all set up and we can finish configuring the exercise.
+
+•	Now, we may create an object to get workout updates from Health Services as they become available. This special type of object is called a listener. 
+
+•	Previously we have used ListenableFuture object to start a specific exercise. Now, we will use the same way to finish the exercise tracking. We will ask the Health Services API to stop tracking exercises by this object.
+
+•	Now, all is done and we will get a set of data. The callback set has various kinds of data. So can sort our specific data based on our criteria. We can search them based on the keys, sort them in a matrix, etc. and we can use them in our application. 
+
+
+This is how Health Services on Galaxy Watch may obtain and process activity data. It's a simple approach to keep track of its development that anyone may adopt into a watch app. 
+ 
+
